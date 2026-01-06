@@ -25,5 +25,3 @@ accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
 
 joblib.dump(model, "parkinsons_model.joblib")
-
-.
