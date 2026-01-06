@@ -1,2 +1,4 @@
-selected_features: ["MDVP:Fo(Hz)", "HNR"]
-path: "parkinsons_model.joblib"
+path: parkinsons_model.joblib
+selected_features:
+  - MDVP:Fo(Hz)
+  - HNR
