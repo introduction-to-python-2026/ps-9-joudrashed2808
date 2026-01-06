@@ -1,4 +1,4 @@
 path: parkinsons_model.joblib
 selected_features:
-  - MDVP:Fo(Hz)
+  - "MDVP:Fo(Hz)"
   - HNR
