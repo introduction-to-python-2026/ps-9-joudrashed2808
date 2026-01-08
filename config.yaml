@@ -1,3 +1,4 @@
-features: ['RDPE', 'PPE']
-path: "my_model.joblib"
-
+selected_features:
+  - "MDVP:Fo(Hz)"
+  - "MDVP:Jitter(%)"
+path: "parkinsons_model.joblib"
