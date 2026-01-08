@@ -24,3 +24,4 @@ from sklearn.metrics import accuracy_score
 y_pred = DTC.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(accuracy)
+
