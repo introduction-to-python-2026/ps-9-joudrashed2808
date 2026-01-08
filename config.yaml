@@ -1,5 +1,3 @@
-selected_features:
-  - MDVP:Fo(Hz)
-  - MDVP:Jitter(%)
-path: parkinsons_model.joblib
+features: ['MDVP:Fo(Hz)', 'MDVP:Jitter(%)']
+path: "parkinsons_model.joblib"
 
