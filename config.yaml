@@ -1,2 +1,2 @@
-features: ['PPE', 'spread2']
+features: ['RPDE', 'spread2']
 path: 'parkinsons_model.joblib'
