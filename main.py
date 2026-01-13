@@ -11,7 +11,7 @@ with open("config.yaml", "r") as f:
 
 data = pd.read_csv("parkinsons.csv")
 
-X = data[config["selected_features"]]
+X = data[config["features"]]
 y = data["status"]
 
 scaler = MinMaxScaler()
