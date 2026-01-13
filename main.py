@@ -12,7 +12,7 @@ with open("config.yaml", "r") as f:
 data = pd.read_csv("parkinsons.csv")
 
 X = data[config["selected_features"]]
-y = data[config["target"]]
+y = data["status"]
 
 scaler = MinMaxScaler()
 X_scaled = scaler.fit_transform(X)
@@ -25,8 +25,8 @@ model = LogisticRegression(max_iter=1000)
 model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
-acc = accuracy_score(y_test, y_pred)
+accuracy = accuracy_score(y_test, y_pred)
 
-print("Accuracy:", acc)
+print("Accuracy:", accuracy)
 
-joblib.dump(model, config["model_path"])
+joblib.dump(model, config["path"])
