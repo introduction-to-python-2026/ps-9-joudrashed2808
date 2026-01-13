@@ -15,13 +15,13 @@ X = data[config["selected_features"]]
 y = data["status"]
 
 scaler = MinMaxScaler()
-X_scaled = scaler.fit_transform(X)
+X = scaler.fit_transform(X)
 
 X_train, X_test, y_train, y_test = train_test_split(
-    X_scaled, y, test_size=0.2, random_state=42
+    X, y, test_size=0.2, random_state=42
 )
 
-model = LogisticRegression(max_iter=1000)
+model = LogisticRegression(solver="liblinear", max_iter=1000)
 model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
