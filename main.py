@@ -19,4 +19,3 @@ model = LogisticRegression(solver="liblinear", max_iter=1000)
 model.fit(X, y)
 
 joblib.dump(model, config["path"])
-
