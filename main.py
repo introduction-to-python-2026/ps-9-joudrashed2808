@@ -4,8 +4,9 @@ from sklearn.linear_model import LogisticRegression
 import joblib
 import yaml
 
-with open("config.yaml", "r") as f:
-    config = yaml.safe_load(f)
+f = open("config.yaml", "r")
+config = yaml.safe_load(f)
+f.close()
 
 data = pd.read_csv("parkinsons.csv")
 
