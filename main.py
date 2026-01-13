@@ -11,7 +11,11 @@ with open("config.yaml", "r") as f:
 
 data = pd.read_csv("parkinsons.csv")
 
-X = data[config["features"]]
+if "features" in config:
+    X = data[config["features"]]
+else:
+    X = data[config["selected_features"]]
+
 y = data["status"]
 
 scaler = MinMaxScaler()
@@ -30,3 +34,4 @@ accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
 
 joblib.dump(model, config["path"])
+
