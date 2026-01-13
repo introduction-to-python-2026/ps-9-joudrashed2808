@@ -1,2 +1,2 @@
-features: ['MDVP:Fo(Hz)', 'MDVP:Jitter(%)']
+features: ['PPE', 'MDVP:Jitter(%)']
 path: 'parkinsons_model.joblib'
