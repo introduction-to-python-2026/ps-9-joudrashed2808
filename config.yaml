@@ -1,2 +1,2 @@
-features: ['PPE', 'MDVP:Jitter(%)']
+features: ['PPE', 'spread2']
 path: 'parkinsons_model.joblib'
